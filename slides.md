@@ -115,7 +115,7 @@ class: text-2xl
 
 ---
 layout: two-cols-header
-class: text-xl 
+class: text-xl
 hideInToc: true
 ---
 
@@ -125,7 +125,7 @@ hideInToc: true
 
 - Identidade Única: 
   - Por que cada objeto, mesmo sendo do mesmo tipo, é um indivíduo diferente no sistema.
-- O Programador como Arquiteto: 
+- O Programador como Arquiteto : 
   - A arte de traduzir necessidades do mundo real em modelos digitais.
 - Simplicidade na Complexidade: 
   - Como quebrar um problema grande em pequenos objetos autônomos.
@@ -166,12 +166,11 @@ class Cachorro{
 
 </Transform>
 
-
 ---
 layout: image-right
 image: ./img/Slide04.png
 backgroundSize: 90%
-class: text-xl 
+class: text-xl
 ---
 
 ## A Anatomia de uma Classe
@@ -184,24 +183,23 @@ class: text-xl
 - Métodos (Funções): 
   - A lógica que define as habilidades e comportamentos.
 
-
 ---
-class: text-3xl 
+class: text-3xl
 ---
 
 ## Exercício de modelagem
 
-1.  Crie uma descrição do que deve ser um "Carro" dentro no seu universo.
+1.  Crie uma descrição do que deve ser um "Carro" dentro do seu universo.
 
 Um Carro <span v-click> _TEM_ ... (atributos/substantivos) ... </span> <span v-click>e _FAZ_ ... (métodos/verbos) ... </span>
 
 ---
-class: text-2xl 
+class: text-2xl
 transition: slide-up
 ---
 
 ## Encapsulamento Inicial
-  - Como a classe agrupa dados e comportamentos em uma única unidade?
+  - Como a classe agrupa seus dados e comportamentos em uma única unidade?
 <Transform :scale="1.8">
 
 ```java{none|1|2-4|5-10|all}{at:1}
@@ -225,7 +223,6 @@ class Cachorro {
 
 <Arrow v-click="[7, 8]" x1="370" y1="200" x2="270" y2="300" />
 <Arrow v-click="[7, 8]" x1="370" y1="300" x2="270" y2="400" />
-
 
 ---
 class: text-xl 
@@ -256,14 +253,14 @@ class Carro {
 ---
 layout: quote
 color: green-light
-class: text-2xl 
+class: text-2xl
 transition: slide-up
 ---
 
 ## Abstração
 
 
-A arte de simplificar a realidade para focar no que importa.
+A arte de simplificar a realidade para você focar no que importa.
 
 ---
 layout: image-right
@@ -407,10 +404,10 @@ class: text-xl
 - Definição de Atributo: São as características ou propriedades que descrevem o objeto.
 - Variáveis de Instância: Por que cada objeto guarda sua própria cópia dessas informações.
 - O Estado do Ser: Como o conjunto de atributos define quem o objeto é naquele momento.
-- Exemplos práticos: `corDoOlho`, `altura`, `nome`, `saldoBancario`.
+- Exemplos práticos: `corDoOlho`, `altura`, `nome`.
 
 ---
-class: text-2xl
+class: text-xl
 layout: image-right
 image: ./img/Slide22.png
 backgroundSize: 110%
@@ -419,7 +416,7 @@ backgroundSize: 110%
 ## Tipos Primitivos - Partículas Elementares
 
 - A Matéria Bruta: Tipos básicos que guardam valores simples (números, letras, sim/não).
-- Os Mais Usados: `int` (inteiros), `double` (decimais), `boolean` (lógica) e `char` (caracteres).
+- Os Mais Usados: `int` (inteiros), `double` (decimais), `boolean` (lógica) e `char` (caracter), String (caracteres).
 - Eficiência: Ocupam pouco espaço e são a base de qualquer estrutura complexa.
 
 
@@ -439,7 +436,7 @@ backgroundSize: 110%
 
 
 ---
-class: text-2xl
+class: text-xl
 layout: image-right
 image: ./img/Slide25.png
 backgroundSize: 110%
@@ -447,8 +444,8 @@ backgroundSize: 110%
 
 ## Assinatura de Métodos - Verbos e Poderes
 
-- Nome do Método: A escolha de nomes que indicam ação (`correr`, `salvar`, `calcular`).
-- Parâmetros: As informações extras que o método precisa para funcionar (ex: `acelerar(intensidade)`).
+- Nome do Método: A escolha de nomes que indicam ação (`correr()`, `salvar()`, `calcular()`).
+- Parâmetros: As informações extras que o método precisa para funcionar (ex: `acelerar(int intensidade)`).
 - Retorno: O resultado que o método devolve após processar a informação.
 
 
@@ -461,8 +458,8 @@ backgroundSize: 110%
 
 ## Mutação - Mudando o Estado
 
-  - Um método pode ler e alterar os atributos do próprio objeto. -
-    - Exemplo do `idade++` ou `subirNivel()` - a ação transformando o estado do objeto.
+  - Um método pode ler e alterar os atributos do próprio objeto.
+    - Exemplo do `idade++` ou `subirNivel()` - a ação transformando o estado do objeto
 
 ---
 class: text-2xl
@@ -515,4 +512,3 @@ class: text-3xl
 - Síntese do Objeto: Objeto = Dados (Atributos) + Comportamento (Métodos).
 - Coesão: Por que é importante manter dados e ações juntos na mesma classe.
 - Conclusão do Ato: Sem atributos, o objeto é vazio; sem métodos, o objeto é inerte.
-

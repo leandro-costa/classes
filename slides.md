@@ -23,7 +23,7 @@ hideInToc: true
 
 ## Agenda
 
-<Toc />
+<Toc columns="2" />
 
 
 
@@ -45,7 +45,7 @@ class: text-2xl
 
 ---
 layout: quote
-color: sky-light
+color: green-light
 class: text-2xl 
 --- 
 
@@ -198,7 +198,6 @@ Um Carro <span v-click> _TEM_ ... (atributos/substantivos) ... </span> <span v-c
 ---
 class: text-2xl 
 transition: slide-up
-level: 2
 ---
 
 ## Encapsulamento Inicial
@@ -255,17 +254,265 @@ class Carro {
 </Transform>
 
 ---
-class: text-xl 
+layout: quote
+color: green-light
+class: text-2xl 
+transition: slide-up
 ---
 
 ## Abstração
 
 
-> A arte de simplificar a realidade para focar no que importa.
+A arte de simplificar a realidade para focar no que importa.
+
+---
+layout: image-right
+image: ./img/abstracao.png
+backgroundSize: 110%
+class: text-xl
+hideInToc: true
+transition: slide-up
+---
+
+## Abstração
+
+<Admonition title="Filtragem de Detalhes" customTitle="text-2xl" custom="text-xl" color="teal-light">
+
+Ignorar o irrelevante para reduzir a carga cognitiva e a complexidade do código.
+</Admonition>
+
+- O Modelo Essencial
+  - Representar apenas as características necessárias para o contexto do problema.
+- Redução de Ruído
+  - Como evitar que o excesso de informação prejudique a lógica do sistema.
+
+
+---
+layout: image-right
+image: ./img/paciente.png
+backgroundSize: 110%
+class: text-xl
+hideInToc: true
+transition: slide-up
+---
+
+## Abstração
+
+<Admonition title="A Lente do Contexto" customTitle="text-2xl" custom="text-xl" color="teal-light">
+O que é essencial em um sistema pode ser irrelevante em outro
+</Admonition>
+
+Exemplo do Pessoa sendo modelada em dois contextos diferentes:
+
+- No Sistema Hospitalar
+  - Focamos em `tipoSanguineo`, `historicoMedico` e `alergias`.
+
+- No Sistema de uma Loja de Discos
+  - O mesmo paciente (agora um cliente) seria modelado por `estiloMusical` e `albunsFavoritos`.
+
+
+---
+layout: image-right
+image: ./img/balada.png
+backgroundSize: 110%
+class: text-xl
+transition: slide-up
+---
+
+## O Contexto 
+
+- A Relevância do Dado
+  - Em um sistema de controle de acesso (portaria), o único atributo que define se o objeto pode ou não executar o método `entrar()` é a `idade`.
+- Descarte de Informação
+  - Para o segurança (o sistema), não importa o `tipoSanguineo` ou `historicoMedico` do cliente. Ter esses dados aqui seria um desperdício de memória e complexidade.
+
+---
+class: text-2xl
+transition: slide-up
+---
+
+## Foco no Comportamento
+
+<Admonition title="" icon="" custom="text-2xl" color="teal-light">
+
+A abstração permite que o sistema tome decisões rápidas focando apenas nas propriedades que afetam a regra de negócio atual.
+
+</Admonition>
+
+
+- Objeto do mundo real único, Múltiplas Visões
+  - Entendendo que um "Cliente" em uma balada é uma abstração diferente de um "Paciente" em um hospital, mesmo que ambos representem a mesma pessoa física.
+
+---
+layout: quote
+color: green-light
+class: text-2xl 
+hideInToc: true
+transition: slide-up
+---
+
+## Abstração
+Abstrair é saber o que ignorar
+
+
+---
+layout: image-right
+image: ./img/esculpir.png
+backgroundSize: 110%
+class: text-xl
+---
+
+##  Modelagem Consciente
+
+
+<Admonition custom="text-2xl" title="" icon="" color="yellow-light">
+
+Escolher os atributos certos não é apenas sobre técnica, é sobre entender profundamente o negócio.
+
+</Admonition>
+
+-  Um "universo estável" (sistema) depende de modelos que reflitam a realidade de forma equilibrada - nem complexos demais, nem simples ao extremo.
+
+- Transformar requisitos abstratos em estruturas concretas, elegantes e funcionais.
 
 
 
-- Filtragem de Detalhes: Ignorar o irrelevante para reduzir a carga cognitiva e a complexidade do código.
-- O Modelo Essencial: Representar apenas as características necessárias para o contexto do problema.
-- Redução de Ruído: Como evitar que o excesso de informação prejudique a lógica do sistema.
+---
+class: text-xl
+---
+
+## Atributos (ser) e Métodos (fazer).
+
+::div{.grid.items-center.h-full}
+  :::div
+  <Admonition title="O que a criatura TEM" customTitle="text-2xl h-full" custom="text-xl " color="teal-light">
+  
+  
+  Variáveis de instância definem o estado do objeto
+
+  </Admonition>
+  :::
+::
+
+--- 
+layout: image-right
+image: ./img/Slide21.png
+backgroundSize: 110%
+class: text-xl
+---
+
+
+## Atributos - O DNA do Objeto
+
+- Definição de Atributo: São as características ou propriedades que descrevem o objeto.
+- Variáveis de Instância: Por que cada objeto guarda sua própria cópia dessas informações.
+- O Estado do Ser: Como o conjunto de atributos define quem o objeto é naquele momento.
+- Exemplos práticos: `corDoOlho`, `altura`, `nome`, `saldoBancario`.
+
+---
+class: text-2xl
+layout: image-right
+image: ./img/Slide22.png
+backgroundSize: 110%
+---
+
+## Tipos Primitivos - Partículas Elementares
+
+- A Matéria Bruta: Tipos básicos que guardam valores simples (números, letras, sim/não).
+- Os Mais Usados: `int` (inteiros), `double` (decimais), `boolean` (lógica) e `char` (caracteres).
+- Eficiência: Ocupam pouco espaço e são a base de qualquer estrutura complexa.
+
+
+---
+class: text-2xl
+layout: image-right
+image: ./img/Slide24.png
+backgroundSize: 110%
+---
+
+
+## Métodos - Ação e Transformação
+
+- O "Verbo" do Código: Métodos definem os comportamentos e as habilidades do objeto.
+- Lógica Encapsulada: Onde o processamento acontece de verdade.
+- Interação: Como o mundo externo solicita que o objeto faça algo.
+
+
+---
+class: text-2xl
+layout: image-right
+image: ./img/Slide25.png
+backgroundSize: 110%
+---
+
+## Assinatura de Métodos - Verbos e Poderes
+
+- Nome do Método: A escolha de nomes que indicam ação (`correr`, `salvar`, `calcular`).
+- Parâmetros: As informações extras que o método precisa para funcionar (ex: `acelerar(intensidade)`).
+- Retorno: O resultado que o método devolve após processar a informação.
+
+
+---
+class: text-2xl
+layout: image-right
+image: ./img/Slide26.png
+backgroundSize: 110%
+---
+
+## Mutação - Mudando o Estado
+
+  - Um método pode ler e alterar os atributos do próprio objeto. -
+    - Exemplo do `idade++` ou `subirNivel()` - a ação transformando o estado do objeto.
+
+---
+class: text-2xl
+layout: image-right
+image: ./img/Slide27.png
+backgroundSize: 110%
+---
+
+## Mensagens - O Ato da Invocação
+
+- Sintaxe de Chamada: Entendendo o `objeto.metodo()`.
+- Comunicação entre Objetos: Na POO, o sistema funciona através de objetos enviando mensagens uns aos outros.
+- A Reação: O que acontece quando você "chama" um comportamento.
+
+---
+class: text-2xl
+layout: image-right
+image: ./img/Slide28.png
+backgroundSize: 110%
+---
+
+
+## Efeito Colateral - O Antes e Depois
+
+- Rastreabilidade: Observando a mudança de valores nos atributos após uma execução.
+- Regras de Negócio: Um método `sacar()` que só funciona se o atributo `saldo` for suficiente.
+- A Magia da Execução: O código em movimento transformando dados estáticos.
+
+---
+class: text-xl
+layout: image-right
+image: ./img/Slide29.png
+backgroundSize: 110%
+---
+
+
+## O RPG da Programação
+
+- Analogia Prática: Atributos são a ficha do personagem; Métodos são as habilidades especiais.
+- Status: `HP`, `MP`, `Level` (Atributos).
+- Skills: `atacar()`, `usarItem()`, `defender()` (Métodos).
+- Visão de Jogo: Como enxergar qualquer sistema como um grande tabuleiro interativo.
+
+---
+class: text-3xl
+---
+
+## Revisão - Ser vs. Fazer
+
+- Síntese do Objeto: Objeto = Dados (Atributos) + Comportamento (Métodos).
+- Coesão: Por que é importante manter dados e ações juntos na mesma classe.
+- Conclusão do Ato: Sem atributos, o objeto é vazio; sem métodos, o objeto é inerte.
 

@@ -416,7 +416,7 @@ backgroundSize: 110%
 ## Tipos Primitivos - Partículas Elementares
 
 - A Matéria Bruta: Tipos básicos que guardam valores simples (números, letras, sim/não).
-- Os Mais Usados: `int` (inteiros), `double` (decimais), `boolean` (lógica) e `char` (caracter), String (caracteres).
+- Os Mais Usados: `int` (inteiros), `double` (decimais), `boolean` (lógica) e `char` (caracter), `String` (caracteres).
 - Eficiência: Ocupam pouco espaço e são a base de qualquer estrutura complexa.
 
 

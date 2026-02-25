@@ -378,7 +378,7 @@ Escolher os atributos certos não é apenas sobre técnica, é sobre entender pr
 class: text-xl
 ---
 
-## Atributos (ser) e Métodos (fazer).
+## Atributos (ter) e Métodos (fazer).
 
 ::div{.grid.items-center.h-full}
   :::div
@@ -507,8 +507,19 @@ backgroundSize: 110%
 class: text-3xl
 ---
 
-## Revisão - Ser vs. Fazer
+## Revisão - Ter vs. Fazer
 
 - Síntese do Objeto: Objeto = Dados (Atributos) + Comportamento (Métodos).
 - Coesão: Por que é importante manter dados e ações juntos na mesma classe.
 - Conclusão do Ato: Sem atributos, o objeto é vazio; sem métodos, o objeto é inerte.
+
+
+
+---
+class: text-3xl
+---
+
+## Exercicio
+
+
+[https://classroom.github.com/a/dwIOoObi](https://classroom.github.com/a/dwIOoObi)

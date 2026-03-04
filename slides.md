@@ -225,7 +225,7 @@ class Cachorro {
 <Arrow v-click="[7, 8]" x1="370" y1="300" x2="270" y2="400" />
 
 ---
-class: text-xl 
+class: text-xl
 hideInToc: true
 ---
 
@@ -246,6 +246,28 @@ class Carro {
   void acelerar() {
     // lógica para acelerar o carro
   }
+}
+```
+</Transform>
+
+---
+class: text-2xl
+hideInToc: true
+---
+
+<Transform :scale="2">
+
+```java
+class Carro{//estou definindo um carro
+    int velocidade;//digo que o carro tera um valor de velocidade
+    int acelerar(){//digo que o carro pode acelerar
+        velocidade++;//quando o carro acelerar a velocidade sobe
+        return velocidade;//depois de subir a velocidade o carro diz quanto que a velocidade ficou
+    }
+    int acelerar(int incremento){
+        velocidade+=incremento;
+        return velocidade;
+    }
 }
 ```
 </Transform>
@@ -519,7 +541,9 @@ class: text-3xl
 class: text-3xl
 ---
 
-## Exercicio
+## Exercícios
 
 
-[https://classroom.github.com/a/dwIOoObi](https://classroom.github.com/a/dwIOoObi)
+[Modelagem Carro](https://classroom.github.com/a/dwIOoObi)
+
+[Modelagem TV](https://classroom.github.com/a/cO567GPE)
